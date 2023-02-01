@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item {
+            color: white;
+            font-style: 24px;
+            padding: 25px;
+        }
+
+        .container {
+            display: flex;
+            background-color: black;
+        }
+        .container1 {
+            display: flex;
+        }
+
+        .container1 > img {
+            width: 77px;
+            height: 77px;
+        }
+
+        .container1 > div {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 25px 12px;
+        }
+        #side-menu {
+            background-color: #ccc;
+            width: 200px;
+        }
+
+        #ad-box {
+            background-color: yellow;
+            width: 200px;
+        }
+
+        #main-content {
+            flex: 1;
+        }
+
+        .container2 {
+            display: flex;
+        }
+
+        .container0 {
+            display: flex;
+        }
+        
+        .container11 {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- flexbox -->
+    <!-- 감싸고 있는 요소 : flex container -->
+    <!-- flex container의 '자식' 요소들 : flex item -->
+    <div class="container0">    
+        <div class="container1">
+            <img src="파월.jpg" alt="">
+            <div>Tutorials <i class="fa-solid fa-caret-down"></i></div>
+            <div>References <i class="fa-solid fa-caret-down"></i></div>
+            <div>Exercises <i class="fa-solid fa-caret-down"></i></div>
+            <div>Sign Up <i class="fa-solid fa-caret-down"></i></div>
+        </div>    
+         <!-- Right Menu -->
+         <div class="container11">
+            <div style="background-color: black; color: white;">Pro</div>
+            <div style="background-color: pink; color: black;">Get Certified </div>
+            <div style="background-color: yellow; color: black">Create Website</i></div>
+            <div style="background-color: green; color: white;">Log in</div>
+        </div>
+    </div>
+    <div class="container" style="justify-content: space-between;">
+
+        <div class="container">
+            
+            <!-- .item*10 -->
+            <div class="item">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="item">
+                HTML
+            </div>
+            <div class="item">
+                CSS
+            </div>
+            <div class="item">
+                JAVASCRIPT
+            </div>
+            <div class="item">
+                SQL
+            </div>
+            <div class="item">
+                PYTHON
+            </div>
+            <div class="item">
+                JAVA
+            </div>
+            <div class="item">
+                PHP
+            </div>
+            <div class="item">
+                BOOTSTRAP
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="item">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <!-- .container>.content*3>lorem1 -->
+    <div class="container2">
+        <div class="content" id="side-menu">
+            <!-- side menu -->
+            <!-- .side-menu-item*30>lorem1 -->
+            <div class="side-menu-item">Lorem.</div>
+            <div class="side-menu-item">Debitis!</div>
+            <div class="side-menu-item">Doloribus.</div>
+            <div class="side-menu-item">Inventore!</div>
+            <div class="side-menu-item">Dolorem.</div>
+            <div class="side-menu-item">Omnis?</div>
+            <div class="side-menu-item">Dignissimos?</div>
+            <div class="side-menu-item">Fugit!</div>
+            <div class="side-menu-item">Aliquam.</div>
+            <div class="side-menu-item">Voluptatibus?</div>
+            <div class="side-menu-item">Facere.</div>
+            <div class="side-menu-item">Qui!</div>
+            <div class="side-menu-item">Unde!</div>
+            <div class="side-menu-item">Sunt.</div>
+            <div class="side-menu-item">Consectetur.</div>
+            <div class="side-menu-item">Exercitationem.</div>
+            <div class="side-menu-item">Temporibus?</div>
+            <div class="side-menu-item">Cum?</div>
+            <div class="side-menu-item">Nostrum.</div>
+            <div class="side-menu-item">Pariatur.</div>
+            <div class="side-menu-item">Earum.</div>
+            <div class="side-menu-item">Labore.</div>
+            <div class="side-menu-item">Veniam.</div>
+            <div class="side-menu-item">Vel.</div>
+            <div class="side-menu-item">Soluta.</div>
+            <div class="side-menu-item">Distinctio!</div>
+            <div class="side-menu-item">Id?</div>
+            <div class="side-menu-item">Vero.</div>
+            <div class="side-menu-item">Tempora.</div>
+            <div class="side-menu-item">Porro.</div>
+        </div>
+        <div class="content" id="main-content">
+            <!-- main content -->
+            <!-- (h1>lorem3^p>lorem)*10 -->
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio hic eaque quo molestiae eum similique voluptatum amet adipisci! Optio quae minus sapiente cupiditate, ipsa quam corrupti iure soluta reiciendis tempore!</p>
+            <h1>Laboriosam, similique eum.</h1>
+            <p>Eius, exercitationem ex minima provident numquam officiis quae ratione amet excepturi aliquam repellat facilis modi iure corrupti, tempora, esse in adipisci? Beatae quae quisquam harum, nobis consectetur illo veritatis deserunt?</p>
+            <h1>Corrupti, architecto asperiores?</h1>
+            <p>Illo velit aperiam repellat id. Quo harum itaque, ut pariatur officiis esse. Laboriosam facilis officia beatae mollitia? Perferendis quidem consectetur non ea. Velit quibusdam, eius voluptate quae recusandae nihil magni!</p>
+            <h1>Officiis, commodi aspernatur.</h1>
+            <p>Modi aperiam, dolore pariatur, nemo totam cum dignissimos, veritatis ipsam doloremque atque aspernatur debitis voluptate vero culpa itaque assumenda. At non quas ducimus repellendus praesentium dolore architecto, quis optio rem!</p>
+            <h1>Vel, hic cumque.</h1>
+            <p>A porro iusto deleniti beatae magnam illo dolorem, fuga excepturi sed expedita quia iste omnis assumenda perspiciatis quo doloremque itaque deserunt quos, est hic molestias consequatur fugiat magni. Eius, cupiditate.</p>
+            <h1>Rem, deleniti maxime.</h1>
+            <p>Quaerat amet veritatis quia. Quisquam laudantium eligendi saepe tempora, corporis placeat ut tempore quidem error eum recusandae a et ab, voluptates aspernatur voluptatum veniam vel architecto dolore at praesentium fuga.</p>
+            <h1>At, cumque nulla?</h1>
+            <p>Repellat cupiditate cum exercitationem cumque natus recusandae tenetur. Tenetur eos, ullam dolor accusantium magni amet hic facilis ea nisi iste, asperiores repudiandae earum, pariatur cupiditate explicabo veritatis molestiae laborum numquam.</p>
+            <h1>Animi, laborum impedit.</h1>
+            <p>Numquam fuga ab, minima perspiciatis facere iste facilis earum officiis, soluta architecto debitis rem mollitia molestiae quisquam recusandae laudantium commodi pariatur cum? Tempora asperiores dolorem alias vel doloremque pariatur. Quia?</p>
+            <h1>Exercitationem, architecto molestiae?</h1>
+            <p>Omnis minima, aut doloribus nam eos illo? Laboriosam eius, nisi recusandae magni voluptate deleniti molestias provident quas facilis et repellat ut. Explicabo facilis voluptate iure earum maxime quisquam delectus unde!</p>
+            <h1>Ratione, asperiores pariatur?</h1>
+            <p>Mollitia eum, eveniet rerum fugiat voluptates debitis consectetur autem aliquam nisi atque aperiam enim dolore accusamus dolorum ipsa ab voluptas blanditiis vero veritatis eligendi consequatur repellat sint nobis. Aperiam, enim.</p>
+        </div>
+        <div class="content" id="ad-box">
+            <!-- ad -->
+            Autem?
+        </div>
+    </div>
+    </body>
+    </html>
