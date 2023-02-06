@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,20 +9,39 @@
     <style>
     </style>
 </head>
+
 <body>
+
+    <input type="text">
+    <button onclick="guess()">입력</button>
+    <p id="result"></p>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    var a = 3; // 예전 방식
-    let b = 4; // 변수
-    const c = 10; // 상수
-    d = 11; // 선언없이 사용 가능하지만 금지 !!!
-    
-   
-    console.log(a);
-    console.log(b);
-    console.log(c);
-    console.log(d);
-   </script>
+        // 컴퓨터가 1~100사이의 수 선택
+        let com = parseInt(Math.random() * 100) + 1;
+        console.log(com);
+
+        function guess() {
+            let user = document.querySelector("input").value;
+            user = Number(user);
+
+            let message = "";
+
+            if (user < com) {
+                message = "더 큰 수를 입력해보세요";
+            } else if (user > com) {
+                message = "더 작은 수를 입력해보세요";
+            } else {
+                message = "정답입니다👍👍👍";
+            }
+
+            document.querySelector("#result").textContent = message;
+        }
+
+
+    </script>
 </body>
+
 </html>
