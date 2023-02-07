@@ -1,6 +1,5 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,32 +8,34 @@
     <style>
     </style>
 </head>
-
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = 0; // 초기화
+    let num1 = +prompt("첫번째 수를 입력하세요", 1);
+    let num2 = +prompt("두번째 수를 입력하세요", 10);
 
-        while (a < 5) { // 조건
-            console.log("a", a);
+    // num1과 num2사이의 수들을 더한 값 출력
+    let min = 0;
+    let max = 0;
 
-            a++; // 조건 변경하는 코드
-        }
+    if (num1 < num2) {
+        min = num1;
+        max = num2;
+    } else {
+        min = num2;
+        max = num1;
+    }
 
-        // for : 반복문
-        // (초기화코드; 조건; 변경코드)
+    let sum = 0;
+    for (let i = min; i <= max; i++) {
+        // console.log(i);
+        sum = sum + i;
+    }
 
-        for (let b = 0; b < 5; b++) {
-            console.log("b", b);
-        }
+    console.log(min + "과 " + max + "사이의 합은 " + sum + "입니다.");
+    
 
-        // 변수 c 사용해서 5~1 출력
-        // for 코드 작성
-        for (let c = 5; c > 0; c--) {
-            console.log("c", c);
-        }
     </script>
 </body>
-
 </html>

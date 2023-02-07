@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,32 +8,35 @@
     <style>
     </style>
 </head>
-
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = 0; // 초기화
+    // 컴퓨터가 1~100사이의 수를 선택
+    let com = parseInt(Math.random() * 100) + 1;
 
-        while (a < 5) { // 조건
-            console.log("a", a);
+    while (true) {
+        let user = +prompt("1~100의 값 중 컴퓨터가 선택한 수를 맞춰보세요", 50);
 
-            a++; // 조건 변경하는 코드
+        // user가 입력한 수가 com 보다 작으면
+        // alert("더 큰 수를 입력해주세요")
+        if (user < com) {
+            alert("더 큰 수를 입력해주세요");
         }
-
-        // for : 반복문
-        // (초기화코드; 조건; 변경코드)
-
-        for (let b = 0; b < 5; b++) {
-            console.log("b", b);
+        // user가 입력한 수가 com보다 크면
+        // alert("더 작은 수를 입력해주세요")
+        else if (user > com) {
+            alert("더 작은 수를 입력해주세요");
         }
-
-        // 변수 c 사용해서 5~1 출력
-        // for 코드 작성
-        for (let c = 5; c > 0; c--) {
-            console.log("c", c);
+        // user가 입력한 수가 com과 같으면
+        // alert("정답입니다.")
+        else {
+            alert("정답입니다")
+            // while문 종료
+            break;
         }
+        
+    }
     </script>
 </body>
-
 </html>

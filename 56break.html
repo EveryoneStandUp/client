@@ -14,26 +14,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = 0; // 초기화
+        // 두개의 주사위를 던지고
+        // 나온 값을 출력
+        // 두 주사위의 값이 같을 때 까지 반복
+        let dice1;
+        let dice2;
 
-        while (a < 5) { // 조건
-            console.log("a", a);
+        while (true) {
+            dice1 = parseInt(Math.random() * 6) + 1;
+            dice2 = parseInt(Math.random() * 6) + 1;
 
-            a++; // 조건 변경하는 코드
+            console.log(dice1, dice2);
+            
+            if (dice1 === dice2) {
+                break;
+            }
         }
 
-        // for : 반복문
-        // (초기화코드; 조건; 변경코드)
 
-        for (let b = 0; b < 5; b++) {
-            console.log("b", b);
-        }
 
-        // 변수 c 사용해서 5~1 출력
-        // for 코드 작성
-        for (let c = 5; c > 0; c--) {
-            console.log("c", c);
-        }
+
     </script>
 </body>
 

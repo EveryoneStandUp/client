@@ -14,25 +14,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = 0; // 초기화
 
-        while (a < 5) { // 조건
-            console.log("a", a);
-
-            a++; // 조건 변경하는 코드
+        for (let i = 2; i <= 9; i++) {
+            console.log(i+"단");
+            for (j = 1; j <= 9; j++) {
+                console.log(i + " X " + j + " = " + (i * j));
+            }
         }
 
-        // for : 반복문
-        // (초기화코드; 조건; 변경코드)
-
-        for (let b = 0; b < 5; b++) {
-            console.log("b", b);
-        }
-
-        // 변수 c 사용해서 5~1 출력
-        // for 코드 작성
-        for (let c = 5; c > 0; c--) {
-            console.log("c", c);
+        console.log("거꾸로 출력");
+        for (let a = 9; a >= 1; a--) {
+            console.log(a+"단");
+            for (b = 9; b >= 1; b--)
+                console.log(a + " X " + b + " = " + (a * b));
         }
     </script>
 </body>
