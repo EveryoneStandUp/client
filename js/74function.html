@@ -15,31 +15,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
 
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
+        function printHello() {
+            console.log("HELLO!!!");
+        }
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+        function printWorld() {
+            console.log("WORLD.");
+        }
 
-        a.address = "jeju";
-        console.log(a.address);
+        // 함수실행(execute), 함수호출(call, invoke)
+        function printHelloWorld() {
+            function newFunction() {
+                console.log("new function");
+            }
+            printHello();
+            printWorld();
+            newFunction();
+        }
 
-        let b = a.age;
-        a.age = 66;
-        console.log(b);
-        console.log(a.age);
 
+        printHello(); // 콘솔에 "HELLO!!"
+        printWorld();
+        printHelloWorld();
 
-        console.log(a.job);
-
-        a.job = "teacher";
-
-        console.log(a.job);
     </script>
 </body>
 

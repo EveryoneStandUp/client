@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,38 +8,29 @@
     <style>
     </style>
 </head>
-
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    
+    function a() {
+        console.log("java");
+    }
 
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
+    a();
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+    // 함수 정의할 때 ()내에 parameter(매개변수) 목록 작성 가능
+    // parameter이름은 lowerCamelCase 관습 따름
+    // parameter는 함수 호출할 때 값을 받음
+    function b(param) {
+        console.log("b함수 실행됨");
+        console.log(param);
+    }
 
-        a.address = "jeju";
-        console.log(a.address);
-
-        let b = a.age;
-        a.age = 66;
-        console.log(b);
-        console.log(a.age);
+    b();
+    b(3);
 
 
-        console.log(a.job);
-
-        a.job = "teacher";
-
-        console.log(a.job);
     </script>
 </body>
-
 </html>

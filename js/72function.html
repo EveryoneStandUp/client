@@ -15,31 +15,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
 
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
+        console.log(1);
+        console.log(2);
+        console.log(3);
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+        // 함수(function) 작성 방법
+        // function 함수이름(parameter1, parmeter2, ...) {실행될 코드들}
+        function a() {
+            // 함수(function):
+            // 바로 실행되지 않고
+            // 나중에 실행하기 위해 묶은 코드들 (code block)
+            console.log(4);
+            console.log(5);
+        }
 
-        a.address = "jeju";
-        console.log(a.address);
+        console.log(6);
 
-        let b = a.age;
-        a.age = 66;
-        console.log(b);
-        console.log(a.age);
+        // 함수 실행 방법
+        // 함수명(argument1, argument2)
+
+        a();
 
 
-        console.log(a.job);
 
-        a.job = "teacher";
-
-        console.log(a.job);
     </script>
 </body>
 
