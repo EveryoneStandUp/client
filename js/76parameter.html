@@ -14,26 +14,40 @@
     <script>
     
     function a() {
-        console.log("java");
+        console.log("parameter 없는 함수");
     }
-
     a();
+    a(33);
 
-    // 함수 정의할 때 ()내에 parameter(매개변수) 목록 작성 가능
-    // parameter이름은 lowerCamelCase 관습 따름
-    // parameter는 함수 호출할 때 값을 받음
-    function b(param) {
-        let c = 5;
-        console.log("b함수 실행됨");
-        console.log(param);
+    function b(param1, param2) {
+        console.log("parameter 2개 있는 함수");
+        console.log(param1, param2);
     }
 
     b();
-    b(3); // argument(인수, 인자): 전달하는 값
-    b(4); // 4를 넣어서 b함수 호출 코드 작성
-    b("css");
-    b([3, 4, 5]);
-    b({address: "seoul", age: 33});
+    b(99);
+    b(11, 22); // 인수는 매개변수 순서에 맞게 들어감
+
+    function printDouble(num) {
+        let d = num * 2;
+        console.log(d); 
+    }
+
+    function printSum(num1, num2) {
+        let e = num1 + num2;
+        console.log(e);
+    }
+    
+    printSum(3, 4); // 7
+    printSum(100,200); // 300
+    printSum("java", "css"); // "javacss"
+
+    printDouble(3); // 6
+    printDouble(4); // 8
+    printDouble(100); // 200
+
+
+
 
     </script>
 </body>

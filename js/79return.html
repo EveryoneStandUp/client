@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,33 +9,44 @@
     <style>
     </style>
 </head>
+
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    function a() {
-        console.log("java");
-    }
 
-    a();
+        function sum(num) {
+            let total = 0
+            for(i=1; i<= num; i++){
+                total += i;
+            }
+            return total;
+        }
 
-    // 함수 정의할 때 ()내에 parameter(매개변수) 목록 작성 가능
-    // parameter이름은 lowerCamelCase 관습 따름
-    // parameter는 함수 호출할 때 값을 받음
-    function b(param) {
-        let c = 5;
-        console.log("b함수 실행됨");
-        console.log(param);
-    }
+        let sum10 = sum(10); // 1~10 합
+        let sum100 = sum(100); // 1~100 합
 
-    b();
-    b(3); // argument(인수, 인자): 전달하는 값
-    b(4); // 4를 넣어서 b함수 호출 코드 작성
-    b("css");
-    b([3, 4, 5]);
-    b({address: "seoul", age: 33});
+        console.log("1~10의합은", sum10);
+        console.log("1~10의합은", sum100);
+
+
+        function multiply(num) {
+            let tot = 1;
+            for(j=1; j<=num; j++){
+                tot *= j;
+            }
+            return tot;
+        }
+        let multiply5 = multiply(5);
+        let multiply10 = multiply(10); // 1~10 곱
+        let multiply100 = multiply(100); // 1~100 곱
+
+        console.log("1~5의 곱은", multiply5);
+        console.log("1~10의 곱은", multiply10);
+        console.log("1~100의 곱은", multiply100);
+
 
     </script>
 </body>
+
 </html>

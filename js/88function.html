@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,33 +9,56 @@
     <style>
     </style>
 </head>
+
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    function a() {
-        console.log("java");
-    }
 
-    a();
+        // 함수는 값
 
-    // 함수 정의할 때 ()내에 parameter(매개변수) 목록 작성 가능
-    // parameter이름은 lowerCamelCase 관습 따름
-    // parameter는 함수 호출할 때 값을 받음
-    function b(param) {
-        let c = 5;
-        console.log("b함수 실행됨");
-        console.log(param);
-    }
+        // 함수 선언
+        function fname(param) {
+            // 코드들...
+        }
 
-    b();
-    b(3); // argument(인수, 인자): 전달하는 값
-    b(4); // 4를 넣어서 b함수 호출 코드 작성
-    b("css");
-    b([3, 4, 5]);
-    b({address: "seoul", age: 33});
+        // 함수 표현식 (Function expression)
+        // 변수에 할당 가능
+        let d = function (param) {
+            // 코드들...
+            console.log("함수식으로 작성된 함수 내 코드들 실행...");
+        }
+
+        d();
+
+         //  인수로 전달 가능
+        function e(param) {
+            
+        }
+
+        e(function (param) {
+            // 명령문들..
+            // 명령문들...
+        });
+
+
+         //  값으로 반환 가능
+        function f() {
+            return function () {
+                // 실행코드들....
+            }
+        }
+        
+         //  데이터 구조에 저장 가능
+        let g = ["css", function() {}];
+        let h = {
+            name: "park",
+            walk: function() {}
+        };
+
+        
 
     </script>
 </body>
+
 </html>

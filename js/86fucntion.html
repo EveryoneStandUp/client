@@ -13,27 +13,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
     
+    // 데이터 구조에 저장 가능
+
     function a() {
-        console.log("java");
+        console.log("에이 함수 실행!!");
     }
 
-    a();
-
-    // 함수 정의할 때 ()내에 parameter(매개변수) 목록 작성 가능
-    // parameter이름은 lowerCamelCase 관습 따름
-    // parameter는 함수 호출할 때 값을 받음
-    function b(param) {
-        let c = 5;
-        console.log("b함수 실행됨");
-        console.log(param);
-    }
-
+    let b = a;
     b();
-    b(3); // argument(인수, 인자): 전달하는 값
-    b(4); // 4를 넣어서 b함수 호출 코드 작성
-    b("css");
-    b([3, 4, 5]);
-    b({address: "seoul", age: 33});
+
+    let c = [3, "hello", a];
+    console.log(c[0] + 3);
+    console.log(c[1] + "world");
+    console.log(c[2]);
+
+    c[2]();
 
     </script>
 </body>
